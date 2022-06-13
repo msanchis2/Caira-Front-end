@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+$font1: "Poppins";
+$font2: "Space Grotesk", sans-serif;
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient(to left, $cairaPurple, $cairaPink);
+$logoMinSize: 120px;
+
+.carousel {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -200px;
+
+    width: 80%;
+
+    margin: auto;
+  }
+}
+
+.review{
+
+  &__title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom:100px;
+  }
+}
+
+.card-container {
+  position: relative;
+
+  width: 36rem;
+  height: 22rem;
+}
+
+.background-block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.card-container svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+
+  color: $cairaPurple;
+}
+
+.card-container svg:hover {
+  cursor: pointer;
+  color: $cairaPink;
+}
+
+article {
+  position: absolute;
+  width: 12rem;
+  height: 100%;
+
+  transition: all 1s;
+}
+
+.carouselCard {
+  &__name {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  &__avatar {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__stars {
+    width: 10vw;
+  }
+
+  &__text {
+    padding: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 20vw;
+  height: 400px;
+  border-radius: 50px;
+  box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.prevCard {
+  left: -345px;
+  opacity: 1;
+  z-index: 0;
+  height: 400px;
+}
+
+.activeCard {
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 20vw;
+  border-radius: 50px;
+  box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+  height: 400px;
+}
+
+.nextCard {
+  left: 729px;
+  transform: translateX(-100%);
+  opacity: 1;
+  z-index: 0;
+  height: 400px;
+}
+
+/* Carousel buttons */
+
+.leftBtn {
+  left: -27rem;
+}
+
+.rightBtn {
+  right: -27rem;
+}
+
+/* Paginator styles */
+.paginator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 30rem;
+  height: 2rem;
+}
+
+.hr {
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: gray;
+}
+
+.dot {
+  height: 1rem;
+  width: 1rem;
+
+  border-radius: 50%;
+
+  background-color: gray;
+  z-index: 1;
+
+  transition: all 1s;
+}
+
+.dot:hover {
+  cursor: pointer;
+}
+
+.dot.active {
+  box-shadow: 0 0 0 4px grey;
+  background-color: white;
+}
+
+
+
+@media screen and (max-width: 3840px) {
+  .prevCard {
+    left: -950px;
+  }
+
+  .nextCard {
+    left: 950px;
+  }
+  .rightBtn {
+    right: -67rem;
+  }
+  .leftBtn {
+    left: -67rem;
+  }
+}
+
+@media screen and (max-width: 2560px) {
+  .prevCard {
+    left: -550px;
+  }
+
+  .nextCard {
+    left: 800px;
+  }
+
+  .rightBtn {
+    right: -40rem;
+  }
+
+  .leftBtn {
+    left: -40rem;
+  }
+
+  .card-container svg {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .prevCard {
+    left: -316px;
+  }
+
+  .nextCard {
+    left: 711px;
+  }
+
+  .leftBtn {
+    left: -25rem;
+  }
+
+  .rightBtn {
+    right: -25rem;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .prevCard {
+    left: -280px;
+  }
+
+  .nextCard {
+    left: 711px;
+  }
+
+  .leftBtn {
+    left: -23rem;
+  }
+
+  .rightBtn {
+    right: -24rem;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .prevCard {
+    left: -222px;
+  }
+
+  .nextCard {
+    left: 679px;
+  }
+
+  .rightBtn {
+    right: -20rem;
+  }
+
+  .leftBtn {
+    left: -20rem;
+  }
+}
+
+@media screen and (max-width: 1384px) {
+  .prevCard {
+    left: -160px;
+  }
+
+  .nextCard {
+    left: 655px;
+  }
+
+  .rightBtn {
+    right: -14rem;
+  }
+
+  .leftBtn {
+    left: -14rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .activeCard {
+    width: 22vw;
+  }
+
+  .card-container {
+    width: 22%;
+  }
+
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 22vw;
+  }
+
+  .carouselCard {
+    &__avatar {
+      width: 80px;
+    }
+
+    &__name {
+      font-size: 22px;
+      overflow: hidden;
+      font-weight: 600;
+      margin-top: 0px;
+    }
+  }
+
+  .prevCard {
+    left: -300px;
+  }
+
+  .nextCard {
+    left: 443px;
+  }
+  .leftBtn {
+    left: -22rem;
+  }
+
+  .rightBtn {
+    right: -22rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .prevCard {
+    left: -250px;
+  }
+  .nextCard {
+    left: 400px;
+  }
+  .rightBtn {
+    right: -19rem;
+  }
+  .leftBtn {
+    left: -19rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .prevCard {
+    display: none;
+  }
+
+  .nextCard {
+    display: none;
+  }
+
+  .activeCard {
+    width: 60vw;
+  }
+
+  .card-container {
+    width: 60%;
+  }
+
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 60vw;
+  }
+
+  .carouselCard {
+    &__stars {
+      width: 18vw;
+    }
+
+    &__text {
+      font-weight: 300;
+    }
+  }
+
+  .leftBtn {
+    left: -5rem;
+  }
+
+  .rightBtn {
+    right: -5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carouselCard {
+    &__stars {
+      width: 30vw;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .prevCard {
+    display: none;
+  }
+
+  .nextCard {
+    display: none;
+  }
+
+  .leftBtn {
+    left: -5rem;
+  }
+
+  .activeCard {
+    width: 60vw;
+  }
+
+  .card-container {
+    width: 60%;
+  }
+
+  .prevCard {
+    left: -35%;
+  }
+
+  .nextCard {
+    left: 135%;
+  }
+
+  .card {
+    width: 60vw;
+  }
+
+  .carouselCard {
+    &__stars {
+      width: 40vw;
+    }
+  }
+}

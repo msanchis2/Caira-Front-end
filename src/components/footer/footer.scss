@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+$font1: "Poppins";
+$font2: "Space Grotesk", sans-serif;
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient(to left, $cairaPurple, $cairaPink);
+$logoMinSize: 120px;
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  top: 450px;
+  width: 100vw;
+  background: $gradient;
+  margin-left: -10px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__logo {
+    width: 150px;
+  }
+
+  &__containerItems {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    color: $cairaWhite;
+    font-family: $font1;
+    font-size: 15px;
+    margin-left: 40px;
+  }
+
+  &__socialIcons {
+    margin-right: 30px;
+    width: 30px;
+  }
+
+  &__ContainerItemsMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 970px) {
+.footer{
+  &__items{
+    font-size: 10px;
+  }
+}
+
+}
+
+@media screen and (max-width: 849px) {
+  .footer {
+    padding-bottom: 10px;
+
+    &__logo {
+      width: 120px;
+    }
+
+    &__items {
+      font-size: 7px;
+      margin-left: 0px;
+    }
+
+    &__ContainerItems {
+      display: none;
+    }
+
+    &__ContainerItemsMobile {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+    }
+
+    &__socialContainer {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__socialIcons {
+      width: 20px;
+      margin-right: 15px;
+    }
+  }
+}

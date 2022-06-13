@@ -1,0 +1,76 @@
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient($cairaPurple,$cairaPink);
+$font1: 'Poppins';
+$font2: 'Space Grotesk', sans-serif;
+$shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+.center-title{
+    height: 1200px;
+    padding: 20%;
+    background-image: url("../../assets/images/Recursos/fondo1.png");
+    background-position: left 5% top 430px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    h1,h2,h3,p{
+        text-align: center;
+        color: $cairaPurple;
+    }
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.arrow2{ 
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-top: 190px;
+}
+
+.info-card, .info-card-2{
+    height: 400px;
+    width: 300px;
+    display:flex; 
+    border-radius: 40px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: $shadow;
+    margin: 40px;
+    padding: 10px;
+    p{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        font-size: 20px; 
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 10px;
+    }
+    h3{
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+.info-card-2{
+    p{
+        img{
+            width: 170px;
+            height: 170px;
+        }
+    }
+    height: 490px !important;
+    p{
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+    }
+}
+
+#cards-resp{
+    display: none;
+}

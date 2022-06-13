@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+$font1: "Poppins";
+$font2: "Space Grotesk", sans-serif;
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient($cairaPurple, $cairaPink);
+$logoMinSize: 120px;
+
+.lock-menu {
+  margin-top: -250px;
+  padding-left: 20px;
+  position: fixed;
+  z-index: 15;
+  top: 380px;
+}
+
+.container-leftMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  height: 60vh;
+  justify-content: space-between;
+}
+
+.left-icon {
+  width: 42px;
+}
+
+.menu-effect:hover {
+  background-color: white;
+  border-radius: 30px;
+}

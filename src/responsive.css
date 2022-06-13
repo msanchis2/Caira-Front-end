@@ -1,0 +1,463 @@
+/* 
+    GUIA RESPONSIVE POR ORDEN DE PRIORIDAD
+    1. Primero media querys min-width, después media querys max-width
+    2. Media querys ordenados de mayor a menor resolución
+    3. En cada media query se ordena primero etiquetas, lueglo clases, último IDs
+    4. Dentro lo posible mantener un orden similar a la web (elementos que afecten al header arriba, al footer abajo, etc.)
+*/
+body{
+    background-color: #f2f2f2;
+}
+
+
+
+@media (min-width: 1920px) {
+    #second{
+        background-position: left 100% top -380px;
+    }
+    footer .ft-text div {
+        margin-left: 200px;
+    }
+    #languages p .en {
+        width: 5px;
+    }
+    #languages p .es {
+        width: 5px;
+    }
+}
+
+@media (max-width: 1180px) {
+    article h1, article h2{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .logo{
+        margin: auto;
+        width: 150px;
+    }
+    .header{
+        justify-content: center;
+    }
+    .pages {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pages p{
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 2px;
+    }
+    .info-card-2{
+        height: 460px;
+    }
+    .ft-logo{
+        margin-top: 32px;
+    }
+    .ft-text{
+        margin-top: 30px !important;
+        flex-direction: column !important;
+    }
+    .form input[type="submit"], .form .google{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    #languages p {
+        margin-left: 2px !important;
+    }
+    #languages p a {
+        margin-left: 2px !important;
+        padding: 0;
+    }
+    #book{
+        margin: auto;
+    }
+    #center-1{
+        background-size: 0;
+        flex-direction: column;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    #center-1 article{
+        text-align: center;
+        width: 100%;
+    }
+    #metaverso{
+        height: auto;
+    }
+    #google{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #second,#third,#fifth{
+        background-size: 0;
+    }
+    #cards {
+        display: none;
+    }
+    #cards-resp{
+        display: block;
+    }
+    #first{
+        flex-direction: column;
+        background-color: transparent;
+        text-align: center;
+        height: 100vh;
+        margin-top: 0;
+        padding: 0 !important;
+        background-image: none;
+    }
+    #first .form{
+        margin: auto;
+        width: 60%;
+        border-radius: 0;
+        height: 300px;
+        margin-top: 5%;
+    }
+    #first article{
+        margin: 0 0 0 0 !important;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width:100% !important;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #sec2{
+        flex-direction: column !important; 
+    }
+    #second {
+        margin-top: 260px;
+    }
+}
+
+@media (max-width: 850px) {
+    .pages {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-lc{
+        flex-direction: column;
+    }
+    footer{
+        grid-template-columns: 40% 60%;
+    }
+
+    .pages p{
+        margin-top: 15px;
+    }
+    .ft-logo img{
+        width: 250px!important;
+        margin-top: 20px;
+    }
+    .social, .social div{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px !important;
+        margin-left: 15px
+    }
+    .bottom{
+        width: 100%;
+    }
+
+    #contact{
+        flex-direction: column;
+    }
+    #second{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #center-1 article{
+        height: 350px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .logo{
+        width: 100px;
+    }
+    .pages {
+        margin-top: -5px;
+        display: flex;
+        flex-direction: row;
+    }
+    .pages p{
+        margin-top: 23px;
+    }
+    .lanz img, .lanz{
+        width: 300px;
+    }
+    .ft-logo img{
+        width: 200px!important;
+        margin-top: 30px;
+    }
+    .card-opinion{
+        width: 300px;
+    }
+    article h1{
+        font-size: 60px !important;
+    }
+    article h2{
+        font-size: 40px !important;
+    }
+    h1{
+        font-size: 40px !important;
+    }
+    h2{
+        font-size: 30px !important;
+    }
+    h3{
+        font-size: 26px !important;
+    }
+    p{
+        font-size: 16px !important;
+    }
+    #first{
+        height: 700px;
+    }
+    #first .form{
+        width: 100%;
+    }
+    .uni-logo img{
+        width: 90px;
+        height: 90px;
+    }
+    .uni-logo{
+        width: 95px;
+        height: 95px;
+    }
+
+    #first article{
+        margin-bottom: 20px;
+        margin-top: 100px;
+    }
+    #center-1 article{
+        height: 430px;
+    }
+    .ft-logo{
+        width: 200px;
+    }
+    #second {
+        margin-top: 10px;
+    }  
+    #book{
+        width: 400px;
+    }
+}  
+
+@media (max-width: 500px) {
+    #languages {
+        margin-left: 15px !important;
+    }
+    #languages p {
+        margin-left: 2px !important;
+    }
+    #languages p a {
+        margin-left: 2px !important;
+        padding: 0;
+    }
+    #first article{
+        padding-bottom: 50px !important;
+    }
+    #second {
+        margin-top: 90px;
+    }
+    #center-1 article{
+        height: 500px;
+    }
+    .pages {
+        display: flex;
+        flex-direction: row;
+    }
+    .arrow,.arrow2,.arrow3{
+        width: 30px;
+    }
+    .ft-logo img{
+        width: 200px!important;
+    }
+    .uni-logo img{
+        width: 65px;
+        height: 65px;
+    }
+    .uni-logo{
+        width: 67px;
+        height: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-opinion{
+        width: 230px;
+    }
+    .card-opinion p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ft-logo{
+        width: 150px;
+    }
+    footer {
+        width: 100vw;
+    }
+    footer .ft-text div {
+    margin-left: 50px !important;
+    }
+    #book{
+        width: 350px;
+        padding: 50px;
+    }
+    #book #calendy{
+        width: 250px;
+    }
+}
+
+@media (max-width: 420px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .pages {
+        margin-top: 4px;
+    }
+    #languages {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px !important;
+        margin-top: 14px;
+    }
+    #languages p {
+        height: 10px;
+        width: 28px;
+        display: flex;
+        align-items: center;
+        margin-top: 2px;
+        margin-left: 2px !important;
+    }
+    #languages p a {
+        margin-left: 2px !important;
+        padding: 0;
+    }
+    article h1{
+        font-size: 40px !important;
+    }
+    article h2{
+        font-size: 30px !important;
+    }
+    h1{
+        font-size: 30px !important;
+    }
+    h2{
+        font-size: 20px !important;
+    }
+    p{
+        font-size: 14px !important;
+    }
+    footer{
+        flex-direction: column;
+        height: 400px;
+    }
+    footer .ft-text div {
+        margin: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    footer .ft-text .legal p {
+        margin: 0 !important;
+        width: 180px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center !important;
+    }
+    footer .ft-text .social a {
+        margin-top: 13px;
+        margin-right: 0px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center !important;
+    }
+    footer .ft-text .social a img {
+        margin: 10px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center !important;
+    }
+    .pages .links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 14px;
+    }
+    .pages .links p{
+        height: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 2px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .lanz img, .lanz{
+        width: 200px;
+    }
+    
+    .info-card {
+        margin-left: 3% !important;
+        margin-right: 3% !important;
+        width: 80% !important;
+    }
+    .info-card p img{
+       width: 180px;
+       height: 180px;
+    }
+     .arrow, .arrow2, .arrow3{
+        width: 20px;
+    } 
+    .arrow2{
+        margin-top: 220px;
+    }
+    
+    .slider {
+        display: flex;
+        margin: 5px;
+    }
+    .uni-logo{        
+        width: 52px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .uni-logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .ft-logo img{
+        width: 150px!important;
+    }
+    .ft-logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #first .form{
+        height: 200px;
+    }
+    #first article{ 
+        height: 200px;
+        padding-top: 10px;
+    }
+    #center-1 article{ 
+        height: 6%;
+        margin-bottom: 20px;
+    }
+    #book{
+        width: 95%;
+        padding: 40px;
+    }
+    #book #calendy{
+        width: 220px;
+    }
+}

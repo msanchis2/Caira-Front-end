@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+h1, h2, h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.opinions-big {
+  height: 800px;
+  background-image: url("../../assets/images/Recursos/fondo2.png");
+  background-size: 30%;
+  background-position: left 90% top 250px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.opinions-big h1, .opinions-big h2, .opinions-big h3, .opinions-big p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.opinions {
+  display: flex;
+  justify-content: center;
+}
+
+.carrusel {
+  width: 650px;
+}
+
+.arrow {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin-top: 190px;
+  margin-top: 130px;
+}
+
+.card-opinion {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 40px;
+}
+.card-opinion p {
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+}
+.card-opinion p img {
+  width: 100px;
+  border-radius: 100%;
+}
+.card-opinion .stars {
+  font-size: 30px;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=opinions.css.map */

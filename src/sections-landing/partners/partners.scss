@@ -1,0 +1,74 @@
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient($cairaPurple,$cairaPink);
+$font1: 'Poppins';
+$font2: 'Space Grotesk', sans-serif;
+$shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+.partners-big{
+    height: 800px;
+    h1,h2,h3,p{
+        text-align: center;
+    }
+    background-color: $cairaWhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $cairaPurple;
+}
+
+h1,h2,h3{
+    font-family: $font2;
+}
+p,a,label,input{
+    font-family: $font1;
+}
+h1{
+    font-size: 52px;
+    font-weight: bold;
+}
+h2{
+    font-size: 42px;
+    font-weight: bold;
+}
+h3{
+    font-size: 34px;
+    margin-top: 30px;
+}
+
+.lanz-contact{
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    img{
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin-top: 40px;
+}
+.uni-logo{
+    border-radius: 100%;
+    background: $gradient;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    img, a{
+        margin: auto;
+        border-radius: 100%;
+        width: 143px;
+        height: 143px;
+    }
+}

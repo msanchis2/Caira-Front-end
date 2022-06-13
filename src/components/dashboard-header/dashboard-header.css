@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+.dashboardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  background-color: #f2f2f2;
+  box-shadow: 8px -4px 16px -3px #000000;
+  top: 0;
+  height: 80px;
+  position: fixed;
+  z-index: 14;
+}
+.dashboardHeader__flexgrow {
+  flex-grow: 0.95;
+}
+.dashboardHeader__flex {
+  display: flex;
+  flex-direction: row;
+  opacity: 50%;
+}
+.dashboardHeader__flex:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+.dashboardHeader__img {
+  margin-top: 5px;
+  margin-left: 150px;
+  width: 100px;
+}
+.dashboardHeader__icon {
+  width: 30px;
+}
+.dashboardHeader__text {
+  font-family: "Poppins";
+  align-self: baseline;
+  margin-right: 10px;
+  margin-top: 4px;
+}/*# sourceMappingURL=dashboard-header.css.map */

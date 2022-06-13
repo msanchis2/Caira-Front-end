@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+$font1: "Poppins";
+$font2: "Space Grotesk", sans-serif;
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient($cairaPurple, $cairaPink);
+$logoMinSize: 120px;
+
+h3 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+.feed{
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+
+    &__container{
+    align-self: center;
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    &__item{
+        width: 250px;
+        height: 250px;
+        background-color: #dcdcdc;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+    }
+}
+
+@media screen and (max-width: 1750px){
+  .feed{
+    &__item{
+      width: 200px;
+      height: 200px;
+  }
+} 
+}
+
+@media screen and (max-width: 1500px){
+  .feed{
+    &__item{
+      width: 180px;
+      height: 180px;
+      margin-bottom: 20px;
+  }
+} 
+}
+
+@media screen and (max-width: 1300px){
+  .feed{
+    &__item{
+      width: 160px;
+      height: 160px;
+  }
+} 
+}
+
+@media screen and (max-width: 1100px){
+  .feed{
+    &__item{
+      width: 140px;
+      height: 140px;
+  }
+} 
+}
+
+@media screen and (max-width: 1000px){
+  .feed{
+    &__item{
+      width: 130px;
+      height: 130px;
+  }
+} 
+}
+
+@media screen and (max-width: 900px){
+  .feed{
+    &__item{
+      width: 180px;
+      height: 180px;
+  }
+    &__container{
+      width: 70vw;
+    }
+} 
+}
+
+@media screen and (max-width: 850px){
+  .feed{
+    margin-top: 70px;
+    margin-bottom: 0px;
+    &__item{
+      width: 160px;
+      height: 160px;
+  }
+  }
+
+}
+
+@media screen and (max-width: 750px){
+  .feed{
+    &__item{
+      width: 140px;
+      height: 140px;
+  }
+} 
+}
+
+@media screen and (max-width: 630px){
+  .feed{
+    &__item{
+      width: 120px;
+      height: 120px;
+  }
+} 
+}
+
+@media screen and (max-width: 550px){
+  .feed{
+    &__item{
+      width: 100px;
+      height: 100px;
+  }
+} 
+}
+
+@media screen and (max-width: 450px){
+  .feed{
+    &__item{
+      width: 80px;
+      height: 80px;
+  }
+} 
+}
+
+@media screen and (max-width: 350px){
+  .feed{
+    &__item{
+      width: 60px;
+      height: 60px;
+  }
+} 
+}

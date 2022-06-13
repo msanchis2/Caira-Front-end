@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+$font1: "Poppins";
+$font2: "Space Grotesk", sans-serif;
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient($cairaPurple, $cairaPink);
+$logoMinSize: 120px;
+
+.bigCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.infoCard {
+  &__itemContainer {
+    height: fit-content;
+    width: 75vw;
+    background-color:white;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    // border: 2px solid #00000017;
+    border-radius: 30px;
+    margin-top: 48px;
+    padding-bottom: 100px;
+    box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+  }
+
+  &__title {
+    font-family: $font1;
+    color: $cairaPurple;
+    font-size: 70px;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-family: $font2;
+    color: $cairaPurple;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__hidden {
+    display: none;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .infoCard{
+    &__title {
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .infoCard {
+    &__itemContainer {
+      padding: 0px;
+      height: fit-content;
+      padding: 40px;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 25px;
+      font-weight: 800;
+      margin-top: -20px;
+    }
+
+    &__text {
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
+  .bigCard{
+    margin-bottom: 0px;
+  }
+}

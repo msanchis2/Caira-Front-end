@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+h3 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.feed {
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+}
+.feed__container {
+  align-self: center;
+  width: 45vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.feed__item {
+  width: 250px;
+  height: 250px;
+  background-color: #dcdcdc;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+}
+
+@media screen and (max-width: 1750px) {
+  .feed__item {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .feed__item {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .feed__item {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .feed__item {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .feed__item {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .feed__item {
+    width: 180px;
+    height: 180px;
+  }
+  .feed__container {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .feed {
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+  .feed__item {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .feed__item {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .feed__item {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .feed__item {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .feed__item {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .feed__item {
+    width: 60px;
+    height: 60px;
+  }
+}/*# sourceMappingURL=feed.css.map */

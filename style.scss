@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/space-grotesk');
+
+$font1: 'Poppins';
+$font2: 'Space Grotesk', sans-serif;
+$shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient($cairaPurple,$cairaPink);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}    
+
+h1,h2,h3{
+    font-family: $font2;
+}
+p{
+    font-family: $font1;
+}
+h1{
+    font-size: 52px;
+    font-weight: bold;
+}
+h2{
+    font-size: 42px;
+    font-weight: bold;
+}
+h3{
+    font-size: 34px;
+}
+

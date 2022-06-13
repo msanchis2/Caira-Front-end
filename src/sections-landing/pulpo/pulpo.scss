@@ -1,0 +1,19 @@
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient($cairaPurple,$cairaPink);
+$font1: 'Poppins';
+$font2: 'Space Grotesk', sans-serif;
+$shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+.fourth {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $cairaPurple;
+}
+
+.landing-titlesection{
+    text-align: center;
+}

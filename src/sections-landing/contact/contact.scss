@@ -1,0 +1,156 @@
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient($cairaPurple,$cairaPink);
+$font1: 'Poppins';
+$font2: 'Space Grotesk', sans-serif;
+$shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+.contact {
+    height: 200px;
+    width: 100%;
+    background-color: $cairaWhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        margin: 58px;
+        color: $cairaPurple;
+    }
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $cairaWhite;
+}
+
+.bottom-1{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#contact-form{
+    input{
+        &[type="text"],&[type="email"]{
+            width: 90%;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            border: none;
+            height: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+    }
+    textarea{
+        height: 200px;
+        width: 90%;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        border: none;
+        padding: 20px;
+        font-family: $font1;
+        background-color: #ffffff;
+    }
+}
+
+.bottom-2{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: end;
+    p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: end;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+p,a,label,input{
+    font-family: $font1;
+}
+
+.lanz-div {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.lanz{
+    width: 400px;
+    justify-content: flex-start;
+    img{
+        width: 400px;
+        margin-bottom: 40px;
+    }
+}
+
+.loc{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    p{
+        margin-left: 10px
+    }
+    img{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.social{
+    margin-top: 13px;
+    img{
+        width: 30px;
+        margin-left: 10px;
+    }
+}
+
+.button{
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    transition: width 0.2s linear 0.2s,height 0.2s linear 0.2s,font-size 0.2s linear 0.2s;
+    &.pink{
+        border: 2px solid $cairaPink;
+        color: $cairaPink
+    }
+    &.purple{
+        border: 2px solid $cairaPurple;
+        color: $cairaPurple;
+    }
+    &:hover{
+        cursor: pointer;
+        color: $cairaWhite !important;
+        //font-weight: bold;
+        background: -webkit-gradient(linear, right top, left top, from($cairaPurple), to($cairaPink));
+        background: linear-gradient(to right, $cairaPurple, $cairaPink);
+        border: 2px solid $cairaWhite;
+    }
+    a{
+        text-decoration: none;
+        color: $cairaPurple;
+    }
+}

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+.uniMenu {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  top: 110px;
+  align-items: center;
+  margin-bottom: 110px;
+}
+.uniMenu__buttonsContainer {
+  width: 75vw;
+  margin-bottom: -5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.uniMenu__button {
+  height: 70px;
+  background-color: transparent;
+  margin: 0px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 25px;
+  color: #252859;
+  border: 0px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.uniMenu__button:hover {
+  width: 100%;
+  transition: width 0.2s;
+  border-bottom: 2px solid #fb95f3;
+  cursor: pointer;
+}
+.uniMenu__buttonActive {
+  height: 70px;
+  background-color: transparent;
+  margin: 0px;
+  font-size: 25px;
+  color: #252859;
+  border: 0px;
+  border-bottom: 7px solid #fb95f3;
+  font-weight: 500;
+  padding-top: 7px;
+  display: flex;
+  align-items: center;
+}
+.uniMenu__icons {
+  padding-right: 7px;
+}
+.uniMenu__icons-two {
+  width: 35px;
+  padding-right: 7px;
+}
+
+.uniFlex {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 849px) {
+  .uniMenu {
+    margin-top: 0px;
+    top: 20px;
+    margin-bottom: 35px;
+  }
+  .uniMenu__button {
+    font-size: 17px;
+  }
+  .uniMenu__buttonActive {
+    font-size: 17px;
+    border-bottom: 3px solid #fb95f3;
+  }
+  .uniMenu__icons {
+    width: 35px;
+  }
+  .uniMenu__icons-two {
+    width: 24px;
+  }
+}/*# sourceMappingURL=uni-menu.css.map */

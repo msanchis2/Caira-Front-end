@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+h3 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 160px;
+  margin-top: -25px;
+  top: 110px;
+  width: 70vw;
+  margin-left: 15vw;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-end;
+}
+
+.uni-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #252859;
+  margin-bottom: 0px;
+  font-size: 57px;
+  margin-top: 0px;
+}
+
+.uni-subtitle {
+  font-family: "Poppins";
+  color: #252859;
+  font-weight: 300;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.stars {
+  height: 40px;
+  margin-left: 20px;
+}
+
+.follows {
+  font-family: "Poppins";
+  color: #252859;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.info {
+  font-family: "Poppins";
+  color: #252859;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.avatar-uni {
+  height: 120%;
+  position: absolute;
+  left: 300px;
+  top: -67px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: -40px;
+}
+
+.redondo {
+  position: absolute;
+  width: 180px;
+  border-radius: 50%;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f2f2;
+  box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+  top: -41px;
+  left: 0px;
+}
+
+@media screen and (max-width: 1380px) {
+  .uni-title {
+    font-size: 50px;
+  }
+
+  .uni-subtitle {
+    font-size: 28px;
+  }
+
+  .info {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .uni-title {
+    font-size: 45px;
+  }
+
+  .uni-subtitle {
+    font-size: 25px;
+  }
+
+  .info {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .uni-title {
+    font-size: 42px;
+  }
+
+  .uni-subtitle {
+    font-size: 22px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .uni-title {
+    font-size: 38px;
+  }
+
+  .uni-subtitle {
+    font-size: 19px;
+  }
+
+  .info {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .uni-title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .info {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 849px) {
+  .main-container {
+    top: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .title-container {
+    margin-right: 0px;
+    align-items: center;
+    margin-top: 41px;
+  }
+
+  .avatar-uni {
+    height: 34%;
+    left: 3px;
+    top: -50px;
+  }
+
+  .uni-title {
+    font-size: 33px;
+  }
+
+  .uni-subtitle {
+    font-size: 17px;
+  }
+
+  .follows {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+
+  .flat-button {
+    box-shadow: 0px 0px 0px 0px;
+    font-weight: 500;
+    color: #252859;
+    font-size: 22px;
+    width: 40vw;
+  }
+
+  .redondo {
+    width: 65px;
+    border-radius: 50%;
+    height: 65px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f2f2f2;
+    box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+  }
+}
+@media screen and (max-width: 400px) {
+  .info {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .info {
+    font-size: 8px;
+    margin-top: 3px;
+  }
+}/*# sourceMappingURL=title-card.css.map */

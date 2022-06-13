@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  top: 230px;
+  margin-bottom: 60px;
+}
+.review__flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+.review__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75vw;
+}
+.review__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 20vw;
+  border-radius: 50px;
+  box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+}
+.review__title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #252859;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.review__stars {
+  width: 8vw;
+}
+.review__name {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.review__text {
+  padding: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 500;
+  width: 14vw;
+}
+.review__avatar {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.review__button {
+  background-color: transparent;
+  border: none;
+}
+.review__movebutton {
+  width: 20px;
+}
+
+@media screen and (max-width: 849px) {
+  .review__title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .review__container {
+    align-self: center;
+    height: 300px;
+  }
+  .review__name {
+    font-size: 15px;
+  }
+  .review__text {
+    font-size: 12px;
+    width: 50vw;
+  }
+  .review__avatar {
+    width: 60px;
+  }
+  .review__movebutton {
+    width: 10px;
+  }
+  .review__item {
+    width: 50vw;
+  }
+  .review__stars {
+    width: 25vw;
+  }
+
+  .mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=review-carrousel.css.map */

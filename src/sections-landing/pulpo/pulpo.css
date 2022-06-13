@@ -1,0 +1,11 @@
+.fourth {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #252859;
+}
+
+.landing-titlesection {
+  text-align: center;
+}/*# sourceMappingURL=pulpo.css.map */

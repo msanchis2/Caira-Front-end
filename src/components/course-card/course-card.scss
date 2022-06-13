@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+$font1: "Poppins";
+$font2: "Space Grotesk", sans-serif;
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient($cairaPurple, $cairaPink);
+$logoMinSize: 120px;
+
+.courseCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &__itemContainer {
+    height: 1000px;
+    width: 75vw;
+    background-color: transparent;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-top: 0px;
+  }
+
+  &__hidden {
+    display: none;
+  }
+}
+
+.mainCourse {
+  margin-top: 50px;
+  height: fit-content;
+  width: 75vw;
+  border-top: 0px;
+  background-color: white;
+  width: 75vw;
+  border-radius: 30px;
+  display: flex;
+  box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+  justify-content: end;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    margin-left: 70px;
+  }
+
+  &__detailsFlex {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  &__stars {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    padding-top: 20px;
+    font-size: 40px;
+    color: $cairaPurple;
+    font-family: $font2;
+    font-weight: 700;
+    // margin-bottom: 20px;
+  }
+
+  &__description {
+    font-family: $font2;
+    font-size: 20px;
+    color: $cairaPurple;
+    width: 40vw;
+    margin-bottom: 20px;
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &__details {
+    color: $cairaPurple;
+    font-family: $font1;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  &__details:hover {
+    cursor: pointer;
+  }
+
+  &__arrow {
+    width: 50px;
+  }
+
+  &__arrowActive {
+    width: 50px;
+    transform: rotate(270deg);
+  }
+
+  &__image {
+    width: 32vw;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    height: 500px;
+    object-fit: cover;
+  }
+
+  &__imageHidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 5s step-start;
+    position: absolute;
+    left: 0px;
+  }
+}
+
+.moredetails {
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 32vw;
+  background: $gradient;
+  padding: 30px;
+  box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 500px;
+  margin-left: 60px;
+  text-align: center;
+  transition: opacity 1s;
+  -webkit-transition: opacity 0.8s;
+  opacity: 1;
+  position: absolute;
+  z-index: 14;
+
+  &__hidden {
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 32vw;
+    background: $gradient;
+    padding: 30px;
+    box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 500px;
+    margin-left: 60px;
+    text-align: center;
+    z-index: 13;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    opacity: 0;
+    position: absolute;
+  }
+
+  &__itemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40vw;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  &__item {
+    color: white;
+    font-size: 20px;
+    flex-grow: 1;
+    margin-top: 10px;
+    text-shadow: 0.7px 0.7px black;
+  }
+}
+
+.recommendedTitle {
+  margin-top: 80px;
+  color: $cairaPurple;
+  padding-left: 10px;
+}
+
+.recommendedCoursePosition{
+  width: 75vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.recommendedCourse {
+  margin-top: 50px;
+  height: 520px;
+  border-top: 0px;
+  background-color: white;
+  width: 20vw;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+
+
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    padding-top: 25px;
+    font-size: 30px;
+    width: 18vw;
+    margin-left: 1vw;
+    color: $cairaPurple;
+    font-family: $font2;
+    font-weight: 700;
+    height: 140px;
+    text-align: center;
+  }
+
+  &__duration{
+    text-align: center;
+  }
+
+  &__modality{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__description {
+    font-family: $font2;
+    font-size: 20px;
+    color: $cairaPurple;
+    margin-left: 2vw;
+    width: 16vw;
+    height: 120px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__flex {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__stars {
+    width: 180px;
+  }
+}
+
+.image-container {
+  width: 40vw;
+  background-image: url("../../assets/images/illustrations/code.png");
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+@media screen and (max-width: 1700px) {
+  .recommendedCourse{
+
+    &__title{
+      font-size: 25px;
+    }
+    
+    &__flex {
+    width: 20vw;
+  }
+
+  &__stars{
+    width: 150px;
+  }
+}
+}
+
+
+
+@media screen and (max-width: 1380px) {
+  .recommendedCourse {
+    height: fit-content;
+    margin-top: 20px;
+    width: 23vw;
+
+    &__flex{
+      width: 20vw;
+    }
+
+    &__title {
+      font-size: 23px;
+      font-weight: 800;
+      padding-top: 30px;
+      width: 20vw;
+      height: 115px;
+      text-align: center;
+    }
+
+    &__description {
+      font-size: 18px;
+      width: 20vw;
+      height: 110px;
+    }
+
+    &__stars {
+      width: 150px;
+    }
+
+    &__flex {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 1.5vw;
+    }
+
+    &__info {
+      padding-bottom: 30px;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 1100px) {
+  .recommendedCourse {
+    width: 30vw;
+
+
+
+    &__title {
+      font-size: 25px;
+      width: 25vw;
+      margin-top: -15px;
+      margin-bottom: 20px;
+    }
+
+    &__description{
+      width: 28vw;
+    }
+}
+}
+
+@media screen and (max-width: 849px) {
+  .mainCourse {
+    height: fit-content;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    &__title {
+      font-size: 30px;
+      width: 60vw;
+      margin-top: -30px;
+    }
+
+    &__description {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 500;
+      width: 60vw;
+    }
+
+    &__stars {
+      width: 100px;
+      margin-bottom: 25px;
+    }
+
+    &__info {
+      padding-left: 30px;
+      padding-bottom: 20px;
+      margin-left: 0px;
+    }
+
+    &__details {
+      font-size: 18px;
+    }
+
+    &__arrow {
+      width: 30px;
+    }
+
+    &__flex {
+      margin-top: 20px;
+    }
+
+    &__arrowActive{
+      width: 30px;
+    }
+
+    &__image {
+      width: 75vw;
+      background-size: cover;
+      background-position: center;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 0px;
+      margin-left: 0px;
+      border-top-left-radius: 30px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    &__detailsFlex{
+      padding-top: 15px;
+    }
+  }
+
+  .image-container {
+    height: 200px;
+    width: auto;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .recommendedTitle {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 50px;
+  }
+
+  .recommendedCourse {
+    height: fit-content;
+    padding-left: 25px;
+    margin-top: 20px;
+    width: 60vw;
+
+    &__title {
+      font-size: 28px;
+      font-weight: 800;
+      padding-top: 30px;
+      width: 50vw;
+    }
+
+    &__description {
+      font-size: 22px;
+      width: 50vw;
+    }
+
+    &__modality{
+      font-size: 22px;
+    }
+
+    &__duration{
+      font-size: 20px;
+    }
+
+    &__stars {
+      width: 150px;
+    }
+
+    &__flex {
+      flex-direction: column;
+      align-items: center;
+      width: 50vw;
+    }
+
+    &__info {
+      padding-bottom: 30px;
+    }
+  }
+
+  .moredetails {
+    width: 75vw;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 0px;
+    margin-left: 0px;
+    border-top-left-radius: 30px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+
+    &__hidden{
+      width: 75vw;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 0px;
+      margin-left: 0px;
+      border-top-left-radius: 30px;
+      height: 150px;
+      position: absolute;
+      top: 0px;
+      display: flex;
+      justify-content: center;
+      box-shadow: none;
+    }
+
+    &__item {
+      font-size: 10px;
+      width: 70vw;
+    }
+
+
+
+    &__itemContainer{
+      flex-direction: row;
+      justify-content: space-between;
+      width: 70vw;
+    }
+  }
+
+  .recommendedCourse{
+    padding-left: 32px;
+  }
+
+  .transparent-button{
+    height: 40px;
+    width: 120px; 
+  }
+
+  .transparent-button:hover{
+    height: 40px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .recommendedCourse{
+    &__title{
+      font-size: 25px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+.header-container {
+  padding-top: -700px;
+  display: flex;
+  justify-content: center;
+  top: 75px;
+}
+
+.header-background {
+  height: 150px;
+  width: 100vw;
+  background-image: url(../../assets/images/icons/uni.jpg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 849px) {
+  .header-container {
+    top: 0px;
+  }
+
+  .header-background {
+    width: 100vw;
+    height: 160px;
+  }
+}/*# sourceMappingURL=header-image.css.map */

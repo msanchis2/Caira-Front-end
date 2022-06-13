@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+$font1: "Poppins";
+$font2: "Space Grotesk", sans-serif;
+$cairaWhite: #f2f2f2;
+$cairaPurple: #252859;
+$cairaPink: #fb95f3;
+$gradient: linear-gradient(to left, $cairaPurple, $cairaPink);
+$logoMinSize: 120px;
+
+
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-image: url('../../assets/images/illustrations/imagen-fondo-que-es-caira.png');
+  height: 200px;
+  top: 230px;
+  margin-bottom: 60px;
+
+  &__flexContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75vw;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 20vw;
+    border-radius: 50px;
+    box-shadow: 7px 10px 10px -4px rgba(0, 0, 0, 0.23);
+  }
+
+  &__title {
+    font-family: $font2;
+    color: $cairaPurple;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  &__stars {
+    width: 8vw;
+  }
+
+  &__name {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  &__text {
+    padding: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+    width: 14vw;
+  }
+
+  &__avatar {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__movebutton {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .review {
+    &__title {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    &__container {
+      align-self: center;
+      height: 300px;
+    }
+
+    &__name {
+      font-size: 15px;
+    }
+
+    &__text {
+      font-size: 12px;
+      width: 50vw;
+    }
+
+    &__avatar {
+      width: 60px;
+    }
+
+    &__movebutton {
+      width: 10px;
+    }
+
+    &__item {
+      width: 50vw;
+    }
+
+    &__stars {
+      width: 25vw;
+    }
+  }
+
+  .mobile {
+    display: none;
+  }
+}

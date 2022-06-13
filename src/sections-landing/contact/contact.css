@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+.contact {
+  height: 200px;
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h1 {
+  margin: 58px;
+  color: rgb(37, 40, 89);
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+}
+
+.bottom-1 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#contact-form input[type=text], #contact-form input[type=email] {
+  width: 90%;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  border: none;
+  height: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+#contact-form textarea {
+  height: 200px;
+  width: 90%;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  border: none;
+  padding: 20px;
+  font-family: "Poppins";
+  background-color: #ffffff;
+}
+
+.bottom-2 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: end;
+}
+.bottom-2 p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: end;
+}
+.bottom-2 .social {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+p, a, label, input {
+  font-family: "Poppins";
+}
+
+.lanz-div {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lanz {
+  width: 400px;
+  justify-content: flex-end;
+}
+.lanz img {
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+.loc {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.loc p {
+  margin-left: 10px;
+}
+.loc img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social {
+  margin-top: 13px;
+}
+.social img {
+  width: 30px;
+  margin-left: 10px;
+}/*# sourceMappingURL=contact.css.map */
